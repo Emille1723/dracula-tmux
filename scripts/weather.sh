@@ -51,9 +51,10 @@ forecast_unicode()
     echo '❄ '
   elif [[ (($weather_condition =~ 'rain') || ($weather_condition =~ 'shower')) ]]; then
     ### echo '☂ '
-    echo ' '
+    echo '󰕋  '
   elif [[ (($weather_condition =~ 'overcast') || ($weather_condition =~ 'cloud')) ]]; then
-    echo '☁ '
+    ### echo '☁ '
+    echo '  '
   elif [[ $weather_condition = 'NA' ]]; then
     echo ''
   else
